@@ -1,156 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="scss/css/main.css">
-  <!-- GRID -->
-  <link rel="stylesheet" href="libs/bootstrap/grid/bootstrap-grid.css">
-  <!-- FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-
-
-
-  <style>
-    @media screen and (min-width: 320px) and (max-width: 800px){
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="scss/css/main.css">
+    <!-- GRID -->
+    <link rel="stylesheet" href="libs/bootstrap/grid/bootstrap-grid.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <style>
+      @media screen and (min-width: 320px) and (max-width: 800px){
       .input{
-        display: none;
+      display: none;
       }
       .header__wrapper{
-        width: 80%;
+      width: 80%;
       }
       .main__sidebar-icons{
-        display: none;
+      display: none;
       }
-    }
-  </style>
-
-
-</head>
-<body>
-
-  <header class="header">
-    <div class="header__wrapper">
-      <div class="header__input">
-        <img src="images/icon-search.png" alt="search">
-        <input type="text" class="input">
-      </div>
-      <div class="header__user">
-        <div class="header__user-settings">
-          <img src="images/icon-settings.png" alt="icon">
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__input">
+          <img src="images/icon-search.png" alt="search">
+          <input type="text" class="input">
         </div>
-        <div class="header__user-notification">
-          <img src="images/icon-notifications.png" alt="icon">
-        </div>
-        <div class="header__user-avatar">
-          <img src="images/icon-user.png" alt="icon">
+        <div class="header__user">
+          <div class="header__user-settings">
+            <img src="images/icon-settings.png" alt="icon">
+          </div>
+          <div class="header__user-notification">
+            <img src="images/icon-notifications.png" alt="icon">
+          </div>
+          <div class="header__user-avatar">
+            <img src="images/icon-user.png" alt="icon">
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-
-  <main class="main">
-    <div class="block" style="display: flex;">
-      <div class="main__sidebar">
-        <div class="main__sidebar-button">
-          <a href="#" class="main__sidebar-button-btn">
+    </header>
+    <main class="main">
+      <div class="block" style="display: flex;">
+        <div class="main__sidebar">
+          <div class="main__sidebar-button">
+            <a href="#" class="main__sidebar-button-btn">
             <img src="images/icon-writte.png" alt="icon">
             Compose Email
-          </a>
-        </div>
-        <div class="main__sidebar-list">
-          <div class="main__sidebar-list-text">
-            <img src="images/icon-inbox.png" alt="icon">
-            <h4>
-              <a href="#" class="left main__sidebar-list-active">Inbox</a>
-            </h4>
+            </a>
+          </div>
+          <div class="main__sidebar-list">
+            <div class="main__sidebar-list-text">
+              <img src="images/icon-inbox.png" alt="icon">
+              <h4>
+                <a href="#" class="left main__sidebar-list-active">Inbox</a>
+              </h4>
+            </div>
+          </div>
+          <div class="main__sidebar-list">
+            <div class="main__sidebar-list-text">
+              <img src="images/icon-telegram.png" alt="icon">
+              <h4>
+                <a href="#" class="left">Send</a>
+              </h4>
+            </div>
+          </div>
+          <div class="main__sidebar-list">
+            <div class="main__sidebar-list-text">
+              <img src="images/icon-draw.png" alt="icon">
+              <h4>
+                <a href="#" class="left">Draft</a>
+              </h4>
+            </div>
+          </div>
+          <div class="main__sidebar-list">
+            <div class="main__sidebar-list-text">
+              <img src="images/icon-folder.png" alt="icon">
+              <h4>
+                <a href="#" class="left">Folder</a>
+              </h4>
+            </div>
+          </div>
+          <div class="main__sidebar-list">
+            <div class="main__sidebar-list-text">
+              <img src="images/icon-trash.png" alt="icon">
+              <h4>
+                <a href="#" class="left">Trash</a>
+              </h4>
+            </div>
+          </div>
+          <div class="main__sidebar-labels">
+            <div class="main__sidebar-labels-title">
+              <p class="main__sidebar-labels-title-text">Labels</p>
+            </div>
+            <div class="main__sidebar-labels-object">
+              <img src="images/yellow-circle.png" alt="circle">
+              <p class="main__sidebar-labels-object-text">Website</p>
+            </div>
+            <div class="main__sidebar-labels-object">
+              <img src="images/green-circle.png" alt="circle">
+              <p class="main__sidebar-labels-object-text">Work</p>
+            </div>
+            <div class="main__sidebar-labels-object">
+              <img src="images/purple-circle.png" alt="circle">
+              <p class="main__sidebar-labels-object-text">Personal</p>
+            </div>
+            <div class="main__sidebar-labels-object">
+              <img src="images/icon-add.png" alt="circle" style="cursor: pointer;">
+              <a href='#' class="main__sidebar-labels-object-text">Add new</a>
+            </div>
+            <div class="main__sidebar-icons">
+              <ul>
+                <li>
+                  <img src="images/Mail.png" alt="icon">
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <img src="images/Chat.png" alt="icon">
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <img src="images/Contacts.png" alt="icon">
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <img src="images/Calendar.png" alt="icon">
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="main__sidebar-list">
-          <div class="main__sidebar-list-text">
-            <img src="images/icon-telegram.png" alt="icon">
-            <h4>
-              <a href="#" class="left">Send</a>
-            </h4>
+        <div class="block" style="display: flex;">
+          <div class="user">
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
+            <div class="user-block">
+              <div class="user-block-flex">
+                <div class="user-block-images">
+                  <img src="images/yellow-circle.png" alt="circle">
+                </div>
+                <div class="user-block-title">
+                  <h2 class="user-block-title-text">
+                    Maksum Gay
+                    <span class="user-block-title-span">
+                    Today 20:44
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div class="user-block-subtitle">
+                <h4 class="user-block-subtitle-text">Maksum gay</h4>
+              </div>
+              <div class="user-block-description">
+                <p>Davi Icons is a set of 150 pixel perfect icons made on a 40x40px grid with a 2 px stroke ..</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="main__sidebar-list">
-          <div class="main__sidebar-list-text">
-            <img src="images/icon-draw.png" alt="icon">
-            <h4>
-              <a href="#" class="left">Draft</a>
-            </h4>
-          </div>
-        </div>
-        <div class="main__sidebar-list">
-          <div class="main__sidebar-list-text">
-            <img src="images/icon-folder.png" alt="icon">
-            <h4>
-              <a href="#" class="left">Folder</a>
-            </h4>
-          </div>
-        </div>
-        <div class="main__sidebar-list">
-          <div class="main__sidebar-list-text">
-            <img src="images/icon-trash.png" alt="icon">
-            <h4>
-              <a href="#" class="left">Trash</a>
-            </h4>
-          </div>
-        </div>
-        <div class="main__sidebar-labels">
-          <div class="main__sidebar-labels-title">
-            <p class="main__sidebar-labels-title-text">Labels</p>
-          </div>
-          <div class="main__sidebar-labels-object">
-            <img src="images/yellow-circle.png" alt="circle">
-            <p class="main__sidebar-labels-object-text">Website</p>
-          </div>
-          <div class="main__sidebar-labels-object">
-            <img src="images/green-circle.png" alt="circle">
-            <p class="main__sidebar-labels-object-text">Work</p>
-          </div>
-          <div class="main__sidebar-labels-object">
-            <img src="images/purple-circle.png" alt="circle">
-            <p class="main__sidebar-labels-object-text">Personal</p>
-          </div>
-          <div class="main__sidebar-labels-object">
-            <img src="images/icon-add.png" alt="circle" style="cursor: pointer;">
-            <a href='#' class="main__sidebar-labels-object-text">Add new</a>
-          </div>
-          <div class="main__sidebar-icons">
-            <ul>
-              <li>
-                <img src="images/Mail.png" alt="icon">
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <img src="images/Chat.png" alt="icon">
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <img src="images/Contacts.png" alt="icon">
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <img src="images/Calendar.png" alt="icon">
-              </li>
-            </ul>
+        <div class="user__message">
+          <div class="user__message-block">
+            <div class="user-block-flex">
+              <div class="user__message-block-avatar">
+                <img src="images/icon-message-avatar.png" alt="avatar-message">
+              </div>
+              <div class="user__message-block-user-text">
+                <h2 class="user__message-block-user-title">Maksum Gay</h2>
+                <span class="user__message-block-user-span">to me</span>
+              </div>
+            </div>
+            <div class="user__message-block-title">
+              <h2 class="user__message-block-title-text">Davi Icons free kit
+                <span class="user__message-time">Today 20:44</span>
+              </h2>
+            </div>
+            <div class="user__message-block-span">
+              <span class="user__message-block-span-text">Hello, Volodya</span>
+            </div>
+            <div class="user__message-block-description">
+              <p>I saw your latest icons kit on your website, they look super cool!
+              <p>I want to use them in my upcoming  project and I was wondering if they are free for commercial use?</p>
+              <p>Looking forward for your response.</p>
+            </div>
+            <div class="user__message-block-end-description">
+              <p>Best, <span class="user__message-block-end-description-span">
+                Volodya
+              </span></p>
+            </div>
           </div>
         </div>
       </div>
-      <!-- TODO -->
-      <p>TODO</p>
-    </div>
-  </main>
+    </main>
 
 
-</body>
+
+  </body>
 </html>

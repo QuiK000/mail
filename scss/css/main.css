@@ -101,3 +101,53 @@ a {
         cursor: pointer; }
       .main__sidebar-icons li {
         margin: 10px 6px; }
+
+.user {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 30px; }
+  .user-block {
+    cursor: pointer;
+    height: 160px;
+    width: 355px;
+    padding-top: 25px;
+    transition: .3s;
+    margin-bottom: 10px; }
+    .user-block:hover {
+      background: #fff; }
+    .user-block-images {
+      cursor: pointer;
+      margin-left: 30px; }
+    .user-block-subtitle, .user-block-description {
+      margin-left: 66px; }
+    .user-block-subtitle {
+      margin-top: 20px; }
+      .user-block-subtitle-text {
+        font-size: 14px;
+        color: #505a78; }
+    .user-block-description {
+      margin-top: 10px;
+      font-family: 'Roboto', sans-serif;
+      color: #7b8994; }
+      .user-block-description p {
+        font-size: 12px;
+        max-width: 250px; }
+    .user-block-title {
+      margin-left: 15px; }
+      .user-block-title-text {
+        font-size: 18px;
+        font-weight: 700;
+        color: #505a78; }
+      .user-block-title-span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 10px;
+        color: #7b8994;
+        margin-left: 100px; }
+    .user-block-flex {
+      display: flex; }
+
+.user__message {
+  margin-top: -30px; }
+  .user__message-block {
+    background: #fff;
+    height: 270vh; }
