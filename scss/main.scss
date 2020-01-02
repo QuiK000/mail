@@ -20,7 +20,7 @@ a{
 }
 
 .unshow{
-  display: none;
+  display: block;
 }
 
 .left{
@@ -33,3 +33,4 @@ a{
 @import "components/sidebar.scss";
 @import "components/user.scss";
 @import "components/user-message.scss";
+@import "components/pagination.scss";
