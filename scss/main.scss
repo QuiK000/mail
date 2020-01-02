@@ -1,7 +1,14 @@
+$blue: #3b6bb2;
+$wh: #ffffff;
+
 
 *{
   margin: 0;
   padding: 0;
+}
+
+body{
+  background: #f5fafe;
 }
 
 li{
@@ -16,6 +23,11 @@ a{
   display: none;
 }
 
+.left{
+  margin-left: 15px;
+  color: #505a78;
+}
 
 // components
 @import "components/navbar.scss";
+@import "components/sidebar.scss";

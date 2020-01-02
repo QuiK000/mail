@@ -9,8 +9,148 @@
   <link rel="stylesheet" href="scss/css/main.css">
   <!-- GRID -->
   <link rel="stylesheet" href="libs/bootstrap/grid/bootstrap-grid.css">
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+
+
+  <style>
+    @media screen and (min-width: 320px) and (max-width: 800px){
+      .input{
+        display: none;
+      }
+      .header__wrapper{
+        width: 80%;
+      }
+      .main__sidebar-icons{
+        display: none;
+      }
+    }
+  </style>
+
+
 </head>
 <body>
-  <p style="font-size: 345px;">86786868</p>
+
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__input">
+        <img src="images/icon-search.png" alt="search">
+        <input type="text" class="input">
+      </div>
+      <div class="header__user">
+        <div class="header__user-settings">
+          <img src="images/icon-settings.png" alt="icon">
+        </div>
+        <div class="header__user-notification">
+          <img src="images/icon-notifications.png" alt="icon">
+        </div>
+        <div class="header__user-avatar">
+          <img src="images/icon-user.png" alt="icon">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="block" style="display: flex;">
+      <div class="main__sidebar">
+        <div class="main__sidebar-button">
+          <a href="#" class="main__sidebar-button-btn">
+            <img src="images/icon-writte.png" alt="icon">
+            Compose Email
+          </a>
+        </div>
+        <div class="main__sidebar-list">
+          <div class="main__sidebar-list-text">
+            <img src="images/icon-inbox.png" alt="icon">
+            <h4>
+              <a href="#" class="left main__sidebar-list-active">Inbox</a>
+            </h4>
+          </div>
+        </div>
+        <div class="main__sidebar-list">
+          <div class="main__sidebar-list-text">
+            <img src="images/icon-telegram.png" alt="icon">
+            <h4>
+              <a href="#" class="left">Send</a>
+            </h4>
+          </div>
+        </div>
+        <div class="main__sidebar-list">
+          <div class="main__sidebar-list-text">
+            <img src="images/icon-draw.png" alt="icon">
+            <h4>
+              <a href="#" class="left">Draft</a>
+            </h4>
+          </div>
+        </div>
+        <div class="main__sidebar-list">
+          <div class="main__sidebar-list-text">
+            <img src="images/icon-folder.png" alt="icon">
+            <h4>
+              <a href="#" class="left">Folder</a>
+            </h4>
+          </div>
+        </div>
+        <div class="main__sidebar-list">
+          <div class="main__sidebar-list-text">
+            <img src="images/icon-trash.png" alt="icon">
+            <h4>
+              <a href="#" class="left">Trash</a>
+            </h4>
+          </div>
+        </div>
+        <div class="main__sidebar-labels">
+          <div class="main__sidebar-labels-title">
+            <p class="main__sidebar-labels-title-text">Labels</p>
+          </div>
+          <div class="main__sidebar-labels-object">
+            <img src="images/yellow-circle.png" alt="circle">
+            <p class="main__sidebar-labels-object-text">Website</p>
+          </div>
+          <div class="main__sidebar-labels-object">
+            <img src="images/green-circle.png" alt="circle">
+            <p class="main__sidebar-labels-object-text">Work</p>
+          </div>
+          <div class="main__sidebar-labels-object">
+            <img src="images/purple-circle.png" alt="circle">
+            <p class="main__sidebar-labels-object-text">Personal</p>
+          </div>
+          <div class="main__sidebar-labels-object">
+            <img src="images/icon-add.png" alt="circle" style="cursor: pointer;">
+            <a href='#' class="main__sidebar-labels-object-text">Add new</a>
+          </div>
+          <div class="main__sidebar-icons">
+            <ul>
+              <li>
+                <img src="images/Mail.png" alt="icon">
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src="images/Chat.png" alt="icon">
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src="images/Contacts.png" alt="icon">
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src="images/Calendar.png" alt="icon">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- TODO -->
+      <p>TODO</p>
+    </div>
+  </main>
+
+
 </body>
 </html>
