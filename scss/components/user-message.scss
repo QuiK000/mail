@@ -1,9 +1,154 @@
 .user__message{
+  width: 100%;
   margin-top: -30px;
+  font-family: 'Lato', sans-serif;
 
   &-block{
     background: #fff;
-    height: 270vh;
+    padding-top: 45px; padding-left: 60px;
+    border-left: 1px solid #edeef1;
+    border-bottom: 1px solid #edeef1;
+
+    &-user-text{
+      margin-top: 9px; 
+      margin-left: 20px;
+
+      &-title{
+        font-size: 18px;
+        color: #505a78;
+      }
+
+      &-span{
+        font-family: 'Roboto', sans-serif;
+        color: #7b8994;
+        font-size: 10px;
+      }
+
+    }
+
+    &-title{
+      margin-top: 50px;
+
+      &-text{
+        font-size: 18px;
+        color: #505a78;
+        font-weight: 700;
+      }
+
+    }
+
+    &-time{
+      margin-left: 520px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      color: #7b8994;
+    }
+
+    &-span{
+      margin-top: 30px;
+      font-family: 'Roboto', sans-serif;
+      
+      &-text{
+        font-size: 14px;
+        color: #7b8994;
+      }
+
+    }
+
+    &-description{
+      font-family: 'Roboto', sans-serif;
+      margin-top: 30px;
+      
+      p{
+        font-size: 14px;
+        color: #7b8994;
+        margin: 5px 0;
+      }
+
+    }
+
+    &-end-description{
+      margin-top: 30px;
+
+      p{
+        font-size: 14px;
+        color: #7b8994;
+      }
+
+      &-span{
+        display: block;
+      }
+
+    }
+
+  }
+
+  &-send{
+    padding-top: 145px;
+    margin-bottom: 60px;
+
+    &-block{
+      width: 766px;
+      height: 263px;
+      border: 1px solid #edeef1;
+      border-radius: 1px;
+      padding-top: 35px;
+      padding-left: 35px;
+
+      &-avatar{
+        cursor: pointer;
+      }
+
+      &-text{
+        margin-left: 20px;
+        margin-top: 5px;
+
+        &-title{
+          color: #505a78;
+          font-size: 18px;
+        }
+
+      }
+
+      &-input{
+        margin: 25px 0;
+
+        input{
+          padding: 30px;
+          width: 100%;
+          background: none;
+          outline: none;
+          border: none;
+        }
+
+      }
+
+      &-button{
+        transition: .3s;
+
+        &-btn{
+          transition: .3s;
+          padding: 25px 30px;
+          background: #56dacb;
+          color: #fff;
+
+          &:hover{
+            filter: brightness(90%);
+          }
+
+        }
+
+      }
+
+      &-icon{
+        margin-left: 30px;
+        img{
+          cursor: pointer;
+        }
+      }
+
+    }
+
   }
 
 }
