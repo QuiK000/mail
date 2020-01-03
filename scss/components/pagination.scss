@@ -5,6 +5,16 @@
   &-number{
     margin: 0 10px;
     cursor: pointer;
+    color: #505a78;
+    font-weight: 700;
+    transition: .1s;
+    &:hover{
+      color: #000;
+    }
+  }
+
+  &_active{
+    color: #000;
   }
 
 }
